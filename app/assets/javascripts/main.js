@@ -6,14 +6,19 @@
 /* ==============================================
   	Header Text Rotator
   	=============================================== */ 
-    $(document).ready(function(){
+$(document).ready(function(){
        var myterms = ["Front-End Developer", "Graphic Designer", "Problem Solver"];
         function rotateTerm() {
             var ct = $("#rotate").data("term") || 0;
              $("#rotate").data("term", ct == myterms.length -1 ? 0 : ct + 1).text(myterms[ct]).fadeIn().delay(1500).fadeOut(100, rotateTerm);
 }
-
- $(rotateTerm);   
+//call rotateTerm function
+ $(rotateTerm); 
+      
+      
+ /* ==============================================
+  	Page Scroll
+  	=============================================== */ 
       
       $('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -30,7 +35,7 @@
         
       
       
-});
+}); //end document.ready
     
   
 
@@ -41,22 +46,8 @@ function main() {
 (function () {
    'use strict';
 
-   /* ==============================================
-  	Testimonial Slider
-  	=============================================== */ 
+   
 
-  	$('a.page-scroll').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - 40
-            }, 900);
-            return false;
-          }
-        }
-      });
       
       
 
