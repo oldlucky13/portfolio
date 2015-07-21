@@ -115,6 +115,23 @@ font-weight: 900;
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
 	}
+/* Dot navigation */
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  
+        .right {
+        right: 17px;
+      }
+
+}
+
+
+
 /* Home Style */
 #tf-home{
 	//background: url(01.jpg);

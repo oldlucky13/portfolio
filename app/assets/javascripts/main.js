@@ -10,7 +10,16 @@ $(document).ready(function(){
 // }
 // //call rotateTerm function
 //  $(rotateTerm); 
-      
+  
+  /* ==============================================
+  	Fullpage.js navigation
+  	=============================================== */ 
+       $('#fullpage').fullpage({
+        scrollBar:true,
+         anchors:['firstPage', 'secondPage', 'thirdPage','fourthPage','fifthPage','sixthPage','lastPage'],
+         menu: '#fp-nav, #tf-menu',
+         
+       });
       
  /* ==============================================
   	Page Scroll
