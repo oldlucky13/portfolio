@@ -19,6 +19,7 @@ $(document).ready(function(){
          anchors:['firstPage', 'secondPage', 'thirdPage','fourthPage','fifthPage','sixthPage','lastPage'],
          menu: '#fp-nav, #tf-menu',
          
+         
        });
       
  /* ==============================================
