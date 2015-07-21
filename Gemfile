@@ -10,6 +10,8 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+# Borbon for Sass
+gem 'bourbon'
 # Use Bootstrap for styling
 gem 'bootstrap-sass', '~> 3.3.5'
 # Fontawesome
