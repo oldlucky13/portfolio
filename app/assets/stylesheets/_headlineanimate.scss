@@ -70,14 +70,14 @@ a {
 }
 
 .cd-intro {
-	margin: 4em auto;
+	margin: 2em auto 3em;
 
 	@include MQ(M) {
-		margin: 5em auto;
+		margin: 2em auto 3em;
 	}
 
 	@include MQ(L) {
-		margin: 6em auto;
+		margin: 2em auto 4em;
 	}
 }
 
