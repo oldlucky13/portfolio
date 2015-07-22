@@ -18,6 +18,9 @@ $(document).ready(function(){
         scrollBar:true,
          anchors:['firstPage', 'secondPage', 'thirdPage','fourthPage','fifthPage','sixthPage','lastPage'],
          menu: '#fp-nav, #tf-menu',
+         verticalCentered: true,
+          fixedElements:'#tf-menu', 
+         
          
          
        });
