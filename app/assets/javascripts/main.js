@@ -20,7 +20,11 @@ $(document).ready(function(){
          menu: '#fp-nav, #tf-menu',
          verticalCentered: true,
           fixedElements:'#tf-menu', 
-         
+         sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+         afterRender: function(){
+            $('.fp-section.fp-table').css('display','flex');
+  
+        }
          
          
        });
