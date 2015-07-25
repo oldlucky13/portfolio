@@ -135,17 +135,17 @@ font-weight: 900;
 /* Home Style */
 #tf-home{
 	//background: url(01.jpg);
-  height: 100%;
-  background: -webkit-linear-gradient(90deg, #FC354C 10%, #0ABFBC 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #FC354C 10%, #0ABFBC 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #FC354C 10%, #0ABFBC 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #FC354C 10%, #0ABFBC 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #FC354C 10%, #0ABFBC 90%); /* W3C */    
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	color: #cfcfcf;
+  //height: 100%;
+  //background: -webkit-linear-gradient(90deg, #FC354C 10%, #0ABFBC 90%); /* Chrome 10+, Saf5.1+ */
+  //background:    -moz-linear-gradient(90deg, #FC354C 10%, #0ABFBC 90%); /* FF3.6+ */
+  //background:     -ms-linear-gradient(90deg, #FC354C 10%, #0ABFBC 90%); /* IE10 */
+ // background:      -o-linear-gradient(90deg, #FC354C 10%, #0ABFBC 90%); /* Opera 11.10+ */
+ // background:         linear-gradient(90deg, #FC354C 10%, #0ABFBC 90%); /* W3C */    
+	//background-size: cover;
+//	background-position: center;
+	//background-attachment: fixed;
+	//background-repeat: no-repeat;
+//	color: #cfcfcf;
 }
 
 #tf-home .overlay{
@@ -301,9 +301,31 @@ font-weight: 900;
   
 }
 
+// bgvideo
 
-
-
+video#bgvid {
+  		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 	//	background-color: black; /* in case the video doesn't fit the whole page*/
+  		// background-image: ;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+}
+#tf-home .overlay{
+position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 0;
+}
 a.fa.fa-angle-down {
 	padding: 10px 15px;
 	color: #fff;
