@@ -52,11 +52,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+@import 'jquery.fullPage';
 @import 'style';
 @import 'responsive';
 @import 'owl.theme';
 @import 'owl.carousel';
 @import 'animate';
 @import 'headlineanimate';
-@import 'jquery.fullPage';

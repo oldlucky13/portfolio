@@ -16,10 +16,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#tf-home" data-menuanchor="firstPage"class="page-scroll">Home</a></li>
-            <li><a href="#tf-about" data-menuanchor="secondPage" class="page-scroll">About</a></li>
-            <li><a href="#tf-team" data-menuanchor="thirdPage" class="page-scroll">Team</a></li>
-            <li><a href="#tf-services" data-menuanchor="fourthPage" class="page-scroll">Services</a></li>
+            <li data-menuanchor="firstPage"><a href="#tf-home" class="page-scroll">Home</a></li>
+            <li data-menuanchor="secondPage"><a href="#tf-about"  class="page-scroll">About</a></li>
+            <li data-menuanchor="thirdPage"><a href="#thirdPage"  class="page-scroll">Team</a></li>
+            <li data-menuanchor="fourthPage"><a href="#fourthPage"  class="page-scroll">Services</a></li>
             <li><a href="#tf-clients" data-menuanchor="fifthPage" class="page-scroll">Clients</a></li>
             <li><a href="#tf-works" data-menuanchor="sixthPage"  class="page-scroll">Portfolio</a></li>
             <li><a href="#tf-contact" data-menuanchor="lastPage" class="page-scroll">Contact</a></li>
@@ -44,36 +44,48 @@
     ==========================================-->
 <div id="fullpage">
   <div class="section">
-      <video autoplay loop muted poster="" id="bgvid">
-              <source src="https://s3-us-west-1.amazonaws.com/tglucky13/bkgrd_OL_HB.webmhd.webm" type="video/webm">
-              <source src="https://s3-us-west-1.amazonaws.com/tglucky13/bkgrd_OL_HB.mp4" type="video/mp4">
-              </video>
-    <div id="tf-home" class="text-center">
-        <div class="overlay">
-            <div class="content">   
-                  <section class="cd-intro">
-                    <h1 class="cd-headline clip is-full-width">
-                      <span>Hi, I'm Trent </span>
-                      <span class="cd-words-wrapper">
-                        <b class="is-visible">Front-end Developer</b>
-                        <b>Graphic Designer</b>
-                        <b>Problem Solver</b>
-                      </span>
-                  </h1>
-                  </section> <!-- cd-intro -->
-              <a class="mouse-scroll" href="#">
-                  <span class="mouse">
-                    <span class="mouse-movement"> 
-                    </span>
-                  </span>
-                  <span class="mouse-message fadeIn">scroll</span>
-              </a>
-             
-            
-            </div><!--content-->
-        </div><!--overlay-->
-    </div><!--tf home-->
-     
+    <div class="container">
+      <div class="row">
+        <video autoplay loop muted poster="" id="bgvid">
+          <source src="https://s3-us-west-1.amazonaws.com/tglucky13/bkgrd_OL_HB.webmhd.webm" type="video/webm">
+            <source src="https://s3-us-west-1.amazonaws.com/tglucky13/bkgrd_OL_HB.mp4" type="video/mp4">
+            </video>
+            <div id="tf-home" class="text-center">
+              <div class="overlay">
+                <div class="content">
+                  <div class="col-md-2 col-md-offset-2">
+                    <%= image_tag("TGII.svg", :alt => "...", :class => "logo center-block img-responsive") %>
+                  </div>
+                  <div class="col-md-7">
+                    <section class="cd-intro">
+                      <h1 class="cd-headline clip is-full-width">
+                        <span>Hi, I'm Trent </span>
+                        <span class="cd-words-wrapper">
+                          <b class="is-visible">Front-end Developer</b>
+                          <b>Graphic Designer</b>
+                          <b>Problem Solver</b>
+                        </span>
+                      </h1>
+                    </section> <!-- cd-intro -->
+                  </div><!-- col-md-6 -->
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a class="mouse-scroll" href="#">
+                          <span class="mouse">
+                            <span class="mouse-movement"> 
+                            </span>
+                          </span>
+                          <span class="mouse-message fadeIn">scroll</span>
+                        </a>
+                      </div><!--col-md-6-->
+                    </div><!--row-->
+                  </div><!--container-->    
+                </div><!--content-->
+              </div><!--overlay-->
+            </div><!--tf home-->
+          </div><!--row-->
+        </div><!--container-->
   </div> <!--Section-->
     <!-- About Me Page
     ==========================================-->

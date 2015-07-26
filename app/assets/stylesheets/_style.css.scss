@@ -115,6 +115,15 @@ font-weight: 900;
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
 	}
+
+/* Bootstrap overrride */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: transparent !important;
+}
+
+
+
 /* Dot navigation */
 #fp-nav {
   position: fixed;
@@ -149,6 +158,7 @@ font-weight: 900;
 }
 
 #tf-home .overlay{
+
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -172,6 +182,14 @@ font-weight: 900;
 	color: #fcac45;
 }
 
+img.logo.center-block.img-responsive {
+    width: 200px;
+}
+
+h1.cd-headline.clip.is-full-width {
+    color: white;
+    text-align:left;
+}
 /*Scroll Mouse*/
 // Animations
 @-webkit-keyframes scroll-ani {
@@ -243,16 +261,13 @@ font-weight: 900;
   color: #FFF;
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
-  margin-top: 15%;
+  margin-top: 18%;
   text-decoration: none;
   overflow: hidden;
   
   // The Mouse
   .mouse {
     position: relative;
-    position: fixed;
-    left: 50%;
-    top: 85%;
     display: block;
     width: 36.8px;
     height: 58.4px;
