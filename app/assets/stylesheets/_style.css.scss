@@ -86,11 +86,19 @@ color: #fff;
 font-weight: 900;
 }
 
+ul.nav.navbar-nav {
+    width: 100%;
+}
+
 #tf-menu.navbar-default .navbar-nav > li > a {
+  font-family: "lato", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
 	text-transform: uppercase;
 	color: #FFF;
-	font-size: 12px;
-	letter-spacing: 1px;
+	font-size: 1.3em;
+	letter-spacing: 3px;
+  opacity: .8;
 }
 .on {
 	background-color: #222222 !important;
@@ -122,7 +130,19 @@ font-weight: 900;
     background-color: transparent !important;
 }
 
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+  width: 16.66%;
+}
 
+.navbar-collapse {
+  text-align:center;
+}
 
 /* Dot navigation */
 #fp-nav {
