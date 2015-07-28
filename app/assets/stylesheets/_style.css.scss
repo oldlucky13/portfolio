@@ -1,22 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
-
-@font-face {
-    font-family: 'ventography_personal_use_onRg';
-    src: url('ventography-webfont.eot');
-    src: url('ventography-webfont.eot?#iefix') format('embedded-opentype'),
-         url('ventography-webfont.woff2') format('woff2'),
-         url('ventography-webfont.woff') format('woff'),
-         url('ventography-webfont.ttf') format('truetype'),
-         url('ventography-webfont.svg#ventography_personal_use_onRg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-$headline-font-stack:  "lato", "Helvetica", Helvetica, Arial, sans-serif;
-$primary-font-stack : "lato", "Helvetica", Helvetica, Arial, sans-serif;
+@import 'partials/variables'; // colors, fonts etc...
 
 body, html{
 	font-family: $primary-font-stack;
@@ -124,7 +106,7 @@ ul.nav.navbar-nav {
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
-	color: #FCAC45 !important;
+	color: $nav-color;
 	background-color: transparent;
 	font-weight: 700;
 }
@@ -222,9 +204,12 @@ ul.nav.navbar-nav {
 img.logo.center-block.img-responsive {
     width: 200px;
 }
+// Hi, My name is Trent
+.hello{
+  font: 1.3em/100% $headline-font-stack;
+}
 
 h1.cd-headline.clip.is-full-width {
-  font-family: 'ventography_personal_use_onRg';
     color: white;
     text-align:left;
 }
@@ -299,7 +284,7 @@ h1.cd-headline.clip.is-full-width {
   color: #FFF;
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
-  margin-top: 18%;
+  margin-top: 13%;
   text-decoration: none;
   overflow: hidden;
   
@@ -438,7 +423,7 @@ ul.about-list li span{
 	font-weight: 300;
 }
 .section-title.center .line{
-	border-top: 4px solid #fcac45;
+	border-top: 4px solid $nav-color;
 	height: 10px;
 	width: 60px;
 	text-align: center;
