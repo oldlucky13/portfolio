@@ -1,8 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
 
+$headline-font-stack:  "lato", "Helvetica", Helvetica, Arial, sans-serif;
+$primary-font-stack : "lato", "Helvetica", Helvetica, Arial, sans-serif;
+
 body, html{
-	font-family: 'Lato', sans-serif;
+	font-family: $primary-font-stack;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #5a5a5a;
@@ -32,13 +35,13 @@ h5{
 	line-height: 20px;
 }
 p{
-	font-family: 'Open Sans', sans-serif;
+	font-family: $primary-font-stack;
 }
 p.intro{
 	font-size: 16px;
 	margin: 12px 0 0;
 	line-height: 24px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $primary-font-stack;
 }
 a{ color: #FCAC45;}
 a:hover,
@@ -91,7 +94,7 @@ ul.nav.navbar-nav {
 }
 
 #tf-menu.navbar-default .navbar-nav > li > a {
-  font-family: "lato", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: $primary-font-stack;
   font-weight: 300;
   font-size: 1.2em;
 	text-transform: uppercase;
@@ -413,6 +416,7 @@ ul.about-list li span{
 }
 .section-title.center{
 	padding: 30px 0;
+  text-align: center;
 }
 .section-title h2,
 .section-title.center h2{

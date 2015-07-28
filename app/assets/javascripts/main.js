@@ -22,7 +22,7 @@ $(document).ready(function(){
           fixedElements:'#tf-menu', 
          sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
          afterRender: function(){
-           // $('.fp-section.fp-table').css('display','flex');
+           //$('.fp-section.fp-table').css('display','flex');
          $('#bgvid').get(0).play();
   
         }
