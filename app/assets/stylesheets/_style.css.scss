@@ -33,12 +33,37 @@ h5{
 p{
 	font-family: $primary-font-stack;
 }
+
+.section-headline{
+  font-family: $headline-font-stack;
+  color:$secondary-color;
+  font-size:5.5em;
+  
+  
+}
+
+
+/*About section*/
 p.intro{
-	font-size: 16px;
+	font-size: 1.4em;
 	margin: 12px 0 0;
-	line-height: 24px;
+	line-height: 1.618em;
 	font-family: $primary-font-stack;
 }
+
+p.intro:first-child:first-letter { 
+  float: left; 
+  color: $secondary-color; 
+  font-size: 75px; 
+  line-height: 50px;
+  padding-top: 4px; 
+  padding-right: 20px;
+  padding-left: 3px; 
+  font-family:$headline-font-stack;
+
+}
+
+
 a{ color: #FCAC45;}
 a:hover,
 a:focus{
