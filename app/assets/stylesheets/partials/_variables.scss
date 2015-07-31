@@ -14,11 +14,13 @@ $nav-color : #E5C100 !important; //Gold
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
 
+
+
+
 @font-face {
     font-family: 'ventography_personal_use_onRg';
     src: url('ventography-webfont.eot');
     src: url('ventography-webfont.eot?#iefix') format('embedded-opentype'),
-         url('ventography-webfont.woff2') format('woff2'),
          url('ventography-webfont.woff') format('woff'),
          url('ventography-webfont.ttf') format('truetype'),
          url('ventography-webfont.svg#ventography_personal_use_onRg') format('svg');
@@ -27,7 +29,7 @@ $nav-color : #E5C100 !important; //Gold
 
 }
 
-$primary-font: 'Source Sans Pro', sans-serif;
+$primary-font: "lato", "Source Sans Pro", Helvetica, Arial, sans-serif;
 $headline-font-stack:  "ventography_personal_use_onRg", "lato", Helvetica, Arial, sans-serif;
 $primary-font-stack : "lato", "Helvetica", Helvetica, Arial, sans-serif;
 
