@@ -101,7 +101,7 @@
     </div> <!-- row 1 -->
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <p class="intro">  My name is Trent Gardner and I am a front-end developer/graphic designer based in N. California. I have had the opportunity to design, develop and impliment a variety of sites and solutions including some for a Grammy award winning band. I also create a wide array of print and digital designs including full CD packages, posters, T-shirts, etc. some of which is currently on tour. I am constantly improving my knowledge base, skills and have a passion for getting things right.</p>
+        <p class="intro">  My name is Trent Gardner and I am a front-end developer/graphic designer based in N. California. I have had the opportunity to design, develop and impliment a variety of sites and solutions including some for a Grammy award winning band. I also create a wide array of print and digital designs including full CD packages, posters, T-shirts, etc. some of which is currently on tour. I am constantly improving my knowledge base and skills and have a passion for getting things right.</p>
       </div> <!--col-md-10-->
     </div> <!-- row 2 -->
         <!-- Tools -->
@@ -112,13 +112,22 @@
           </div> <!-- col-md-3 -->  
           <div class="col-md-9">
             <ul class="tool-list">
-              <li class="cc-icon"></li>
-              <li class="cc-icon"></li>
-              <li class="cc-icon"></li>
-              <li class="cc-icon"></li>
-              <li class="ruby-icon"></li>
-              <li><i class="icon ion-social-sass"></i></li>
-              <li><i class="icon ion-social-github"></i></li>
+              <li class="toolListIcon"><%= image_tag("icons/PS.svg", :alt => "Photoshop", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/AI.svg", :alt => "Illustrator", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/ID.svg", :alt => "Indesign", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/AE.svg", :alt => "After Effects", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/RR.svg", :alt => "Ruby on Rails", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/RubyGem.svg", :alt => "Ruby", :class => "logo center-block img-responsive" ) %></li>
+             
+               <li class="toolListIcon"><%= image_tag("icons/bootstrap.svg", :alt => "Bootstrap", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/sass.svg", :alt => "Sass", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/Github.svg", :alt => "Github", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/CLI.svg", :alt => "Command Line", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/WP.svg", :alt => "Wordpress", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/HK.svg", :alt => "Heroku", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/sublime.svg", :alt => "Sublime Text", :class => "logo center-block img-responsive" ) %></li>
+              <li class="toolListIcon"><%= image_tag("icons/Nitrous.svg", :alt => "Nitrous", :class => "logo center-block img-responsive" ) %></li>
+              
             </ul>  
           </div> <!-- col-md-9 -->  
         </div> <!--col-md-10-->
@@ -130,14 +139,14 @@
             <h4>Competencies</h4>
           </div> <!-- col-md-3 -->  
           <div class="col-md-9">
-            <ul class="comp">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="comp-list">
+              <li class="comp">html</li>
+              <li class="comp">css</li>
+              <li class="comp">javascript</li>
+              <li class="comp">command line</li>
+              <li class="comp">ror</li>
+              <li class="comp">wordpress</li>
+              <li class="comp">graphic/print design</li>
             </ul>  
           </div> <!-- col-md-9 -->  
         </div> <!--col-md-10-->
@@ -148,9 +157,9 @@
           <div class="col-md-3">
             <h4>Resume</h4>
           </div> <!-- col-md-3 -->  
-          <div class="col-md-9">
+          <div class="col-md-2">
             <ul class="resume">
-              <li><i class="icon ion-android-download"></i></li>
+              <li class="resume-icon"><i class="ion-android-download"></i> <br><span class="download">Download</span></li>
             </ul>  
           </div> <!-- col-md-9 -->  
         </div> <!--col-md-10-->

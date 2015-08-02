@@ -14,12 +14,15 @@ $(document).ready(function(){
   /* ==============================================
   	Fullpage.js navigation
   	=============================================== */ 
+  
        $('#fullpage').fullpage({
         scrollBar:true,
          anchors:['firstPage', 'secondPage', 'thirdPage','fourthPage','fifthPage','sixthPage','lastPage'],
          menu: '#fp-nav, #tf-menu',
          verticalCentered: true,
-          fixedElements:'#tf-menu', 
+         fixedElements:'#tf-menu',
+         responsiveWidth: 480,
+        // scrollOverflow: true,
          //sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
          afterRender: function(){
            //$('.fp-section.fp-table').css('display','flex');
@@ -29,6 +32,21 @@ $(document).ready(function(){
          
          
        });
+  
+    /* ==============================================
+  	slimScroll.js 
+  	=============================================== */ 
+//  $(function(){
+//    $('#slimScrolldiv').slimScroll({
+//        height: '250px',
+//       width: '10px', 
+//      position: 'absolute', top: '0px', opacity: '0.4', display: 'block', border-radius: '7px', z-index: '99', right: '1px', height: '404.560666666667px', background: 'rgb(0, 0, 0)',
+//     });
+// });
+  
+  /* ==============================================
+  	Video Background
+  	=============================================== */ 
   
   function iedetect(v) {
 	    var r = RegExp('msie' + (!isNaN(v) ? ('\\s' + v) : ''), 'i');
