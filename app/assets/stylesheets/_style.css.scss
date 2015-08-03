@@ -1,6 +1,6 @@
 @import 'partials/variables'; // colors, fonts etc...
 @import 'partials/ionicons-font';
-
+@import 'animate';
 
 body, html{
 	font-family: $primary-font-stack;
@@ -428,6 +428,10 @@ p.intro:first-child:first-letter {
 .tool-list li, .comp-list li, .resume li{
   display: inline-block;
   
+        &:hover{
+          @include bounce();
+          
+        }
        [class*="ion-social"], .ion-android-download {
          font-size:3em;
          margin-right:5px; 
@@ -454,6 +458,9 @@ p.intro:first-child:first-letter {
   
   
       }
+
+
+
 
 
 
