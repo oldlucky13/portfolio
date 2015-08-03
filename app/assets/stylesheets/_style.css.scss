@@ -412,8 +412,18 @@ p.intro:first-child:first-letter {
 }
 
 .toolListIcon {
-  width:3em;    
-}
+  width:3em;  
+  
+    & + .tooltip > .tooltip-inner {
+      
+      background-color: rgba(44, 62, 80,0.9);
+    
+    }
+  
+  & + .tooltip > .tooltip-arrow { border-top-color:rgba(44, 62, 80,0.9) !important; }
+  
+} // toolListIcon
+
 
 .tool-list li, .comp-list li, .resume li{
   display: inline-block;

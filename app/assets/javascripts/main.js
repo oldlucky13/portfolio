@@ -1,15 +1,9 @@
-$(document).ready(function(){
-/* ==============================================
-  	Header Text Rotator
+$(document).ready(function(){  
+  /* ==============================================
+  	Bootstrap tooltip initialize
   	=============================================== */ 
-// $(document).ready(function(){
-//        var myterms = ["Front-End Developer", "Graphic Designer", "Problem Solver"];
-//         function rotateTerm() {
-//             var ct = $("#rotate").data("term") || 0;
-//              $("#rotate").data("term", ct == myterms.length -1 ? 0 : ct + 1).text(myterms[ct]).fadeIn().delay(1500).fadeOut(100, rotateTerm);
-// }
-// //call rotateTerm function
-//  $(rotateTerm); 
+  
+  $('.toolListIcon').tooltip();
   
   /* ==============================================
   	Fullpage.js navigation
