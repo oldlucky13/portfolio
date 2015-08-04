@@ -1,5 +1,6 @@
 @import 'partials/variables'; // colors, fonts etc...
 @import 'partials/ionicons-font';
+@import 'partials/buttons/buttons';
 @import 'animate';
 
 body, html{
@@ -425,22 +426,33 @@ p.intro:first-child:first-letter {
 } // toolListIcon
 
 
-.tool-list li, .comp-list li, .resume li{
+.tool-list li, .comp-list li, {
   display: inline-block;
   
         &:hover{
-          @include bounce();
-          
+          @include pulse($duration: 1s,
+                    $delay: 0,
+                    $function: ease
+                    );          
         }
-       [class*="ion-social"], .ion-android-download {
-         font-size:3em;
-         margin-right:5px; 
-         margin-left: 16%;
+
+  
+}
+.resume li{
+  display: inline-block;
+        [class*="ion-social"], .ion-android-download {
+           font-size:3em;
+           margin-right:5px; 
+           margin-left: 16%;
       }
-        
+          &:hover{
+            
+            
+          }
   
   
 }
+
 
 .comp-list {
     margin-top: 10px;
@@ -452,10 +464,10 @@ p.intro:first-child:first-letter {
         padding-right: 5px;
   
                span.download{
-               font-size:.75em;       
+               font-size:.75em;
+               top: -16px;
+               position: relative;
              }
-         
-  
   
       }
 
