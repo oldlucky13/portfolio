@@ -41,8 +41,8 @@ p{
   font-family: $headline-font-stack;
   color:$secondary-color;
   font-size:5.5em;
-  
-  
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -394,6 +394,7 @@ p.intro{
 	margin: 12px 0 0;
 	line-height: 1.618em;
 	font-family: $primary-font-stack;
+  padding-bottom: 20px;
 }
 
 p.intro:first-child:first-letter { 
@@ -476,9 +477,9 @@ p.intro:first-child:first-letter {
 
 
 
-/* Team Section */
+/* Demo Section */
 #tf-team{
-	background: url(03.jpg);
+	background: url(80selectric_mini.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
