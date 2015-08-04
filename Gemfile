@@ -13,7 +13,7 @@ end
 # Borbon for Sass
 gem 'bourbon'
 # Use Bootstrap for styling
-gem 'bootstrap-sass', '~> 3.3.5'
+gem 'bootstrap-sass', '3.3.5'
 # Fontawesome
 gem 'font-awesome-sass', '~> 4.3.0'
 # Use SCSS for stylesheets
