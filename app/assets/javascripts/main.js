@@ -16,17 +16,20 @@ $(document).ready(function(){
          verticalCentered: true,
          fixedElements:'#tf-menu',
          responsiveWidth: 480,
+         slidesNavigation: true,
+         
         // scrollOverflow: true,
          //sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
          afterRender: function(){
-           //$('.fp-section.fp-table').css('display','flex');
+           $('.fp-slide.fp-table').css('display','flex');
          $('#bgvid').get(0).play();
   
         }
          
          
        });
-  
+
+ 
     /* ==============================================
   	slimScroll.js 
   	=============================================== */ 
