@@ -6,6 +6,30 @@ $(document).ready(function(){
   $('.toolListIcon').tooltip();
   
   /* ==============================================
+  	Contact Form AJAX 
+  	=============================================== */ 
+  $(function(){
+    $("#contact_form").submit(function(){
+        var dataSet = $(this).serialize();
+        $.ajax({
+            type: "POST",
+            url: $(this).attr("action"),
+            data: dataSet,
+            complete: function(){
+                alert("Sent!");
+              //clear fields
+              $('input[type="text"],input[type="email"],textarea').val('');
+
+            },
+            error: function(){
+                alert("Something went wrong!");
+            }
+        });
+        return false;
+    });
+})
+  
+  /* ==============================================
   	Fullpage.js navigation
   	=============================================== */ 
   
