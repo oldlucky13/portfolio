@@ -1,4 +1,14 @@
 $(document).ready(function(){  
+  
+  /* ==============================================
+  	Change default message for validator
+  	=============================================== */ 
+  
+  jQuery.extend(jQuery.validator.messages, {
+    required: "Something is amiss...",
+    email: "A valid email address please."
+
+});
   /* ==============================================
   	Bootstrap tooltip initialize
   	=============================================== */ 
@@ -7,27 +17,60 @@ $(document).ready(function(){
   
   /* ==============================================
   	Contact Form AJAX 
-  	=============================================== */ 
-  $(function(){
-    $("#contact_form").submit(function(){
-        var dataSet = $(this).serialize();
-        $.ajax({
-            type: "POST",
-            url: $(this).attr("action"),
-            data: dataSet,
-            complete: function(){
-                alert("Sent!");
-              //clear fields
-              $('input[type="text"],input[type="email"],textarea').val('');
-
+  	=============================================== */
+   $('#contact_form').validate({ // initialize the plugin
+        rules: {
+            "contact[name]": {
+                required: true,
+                
             },
-            error: function(){
-                alert("Something went wrong!");
+           "contact[email]": {
+                required: true,
+                email: true
             }
-        });
-        return false;
-    });
-})
+        },//rules
+     submitHandler: function(form){
+            $.ajax({
+            url: form.action,
+            type: form.method,
+            data: $(form).serialize(),
+            success : function(){
+               $('#contact_form').closest('.row').prepend('<div style="display:block;" class="alert alert-success">Message sent, thanks!</div>');
+               //clear fields
+              $('input[type="text"],input[type="email"],textarea').val('');
+               //fadeout success msg
+              $('.alert-success').delay(5000).fadeOut(400);
+            } //complete
+    
+        }); //ajax
+        
+        } // contact form submit
+     
+    }); //validate plugin
+  
+//   $(function(){
+//     $("#contact_form").submit(function(){
+//         var dataSet = $(this).serialize();
+//         $.ajax({
+//             type: "POST",
+//             url: $(this).attr("action"),
+//             data: dataSet,
+//             complete: function(){
+//                $('#contact_form').closest('.row').prepend('<div style="display:block;" class="alert alert-success">Message sent, thanks! ajax</div>');
+//                //clear fields
+//               $('input[type="text"],input[type="email"],textarea').val('');
+//                //fadeout success msg
+//               $('.alert-success').delay(5000).fadeOut(400);
+//             }, //complete
+//             error: function(){
+//                 $('#contact_form').closest('.row').prepend('<div style="display:block;" class="alert alert-danger">Error occured! Message has not been sent. ajax</div>');
+//               //fadeout failure msg
+//               $('.alert-danger').delay(5000).fadeOut(400);
+//             } //error
+//         }); //ajax
+//         return false;
+//     }); // contact form submit
+// }); //anon function
   
   /* ==============================================
   	Fullpage.js navigation
