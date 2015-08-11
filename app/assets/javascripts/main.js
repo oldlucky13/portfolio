@@ -28,7 +28,12 @@ $(document).ready(function(){
                 required: true,
                 email: true
             }
+          
         },//rules
+     tooltip_options: {
+           "contact[name]": { placement: 'bottom' },
+           "contact[email]": { placement: 'bottom' }
+        },
      submitHandler: function(form){
             $.ajax({
             url: form.action,
@@ -40,13 +45,13 @@ $(document).ready(function(){
               $('input[type="text"],input[type="email"],textarea').val('');
                //fadeout success msg
               $('.alert-success').delay(5000).fadeOut(400);
-            } //complete
+            } //success
     
         }); //ajax
         
         } // contact form submit
      
-    }); //validate plugin
+    }); //validate plugin initialize
   
 //   $(function(){
 //     $("#contact_form").submit(function(){
