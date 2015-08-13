@@ -40,11 +40,11 @@ $(document).ready(function(){
             type: form.method,
             data: $(form).serialize(),
             success : function(){
-               $('#contact_form').closest('.row').prepend('<div style="display:block;" class="alert alert-success">Message sent, thanks!</div>');
+               $('#contact_form').closest('.row').prepend('<div style="display:block;clear:both; " class="alert alert-success">Message sent, thanks!</div>');
                //clear fields
-              $('input[type="text"],input[type="email"],textarea').val('');
+               $('input[type="text"],input[type="email"],textarea').val('');
                //fadeout success msg
-              $('.alert-success').delay(5000).fadeOut(400);
+               $('.alert-success').delay(5000).fadeOut(400);
             } //success
     
         }); //ajax
