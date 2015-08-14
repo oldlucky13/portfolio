@@ -173,16 +173,27 @@ ul.nav.navbar-nav {
 /*=====================
 Home Style 
 =====================*/
-
-#tf-home .overlay{
+.section:first-child{
+/*   top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: url("TGIIoverlay2.svg") center center no-repeat;
+    background-size: cover;
+ */
   
+  
+}
+#tf-home .overlay{
   top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     position: absolute;
-    background: url("tgII_overlay.svg") center center no-repeat;
+    background: url("TGIIoverlay2.svg") center center no-repeat;
     background-size: cover;
+ 
 
 	//background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
@@ -221,7 +232,7 @@ img.logo.center-block.img-responsive {
 
 h1.cd-headline.clip.is-full-width {
     color: white;
-    text-align:left;
+    text-align:center;
 }
 /*Scroll Mouse*/
 // Animations
