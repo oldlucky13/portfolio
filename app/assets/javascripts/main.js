@@ -89,12 +89,12 @@ $(document).ready(function(){
          fixedElements:'#tf-menu',
          responsiveWidth: 480,
          slidesNavigation: true,
-         
+         scrollOverflow: false,   
         // scrollOverflow: true,
          //sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
          afterRender: function(){
            $('.fp-slide.fp-table').css('display','flex');
-         $('#bgvid').get(0).play();
+         
   
         }
          
@@ -125,7 +125,7 @@ $(document).ready(function(){
 
 
 		// Wait until the video meta data has loaded
-		$('#bgvid video').on('loadedmetadata', function() {
+		$('section0').on('loadedmetadata', function() {
 			
 			var $width, $height, // Width and height of screen
 				$vidwidth = this.videoWidth, // Width of video (actual width)
@@ -142,21 +142,21 @@ $(document).ready(function(){
 				$adjRatio = $aspectRatio / $boxRatio; // The ratio of the video divided by the screen size
 							
 				// Set the container to be the width and height of the screen
-				$('#section0').css({'width' : $width+'px', 'height' : $height+'px'}); 
+				$('section0').css({'width' : $width+'px', 'height' : $height+'px'}); 
 							
 				if($boxRatio < $aspectRatio) { // If the screen ratio is less than the aspect ratio..
 					// Set the width of the video to the screen size multiplied by $adjRatio
-					$vid = $('#section0 video').css({'width' : $width*$adjRatio+'px'}); 
+					$vid = $('section0').css({'width' : $width*$adjRatio+'px'}); 
 				} else {
 					// Else just set the video to the width of the screen/container
-					$vid = $('#section0 video').css({'width' : $width+'px'});
+					$vid = $('section0').css({'width' : $width+'px'});
 				}
 								 
 			})(); // Run function immediately
 						
 			// Run function also on window resize.
 			$(window).resize(adjSize);
-		
+      $('#bgvid').get(0).play();
 		});
       
  /* ==============================================

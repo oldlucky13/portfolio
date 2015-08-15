@@ -173,18 +173,7 @@ ul.nav.navbar-nav {
 /*=====================
 Home Style 
 =====================*/
-.section:first-child{
-/*   top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    background: url("TGIIoverlay2.svg") center center no-repeat;
-    background-size: cover;
- */
-  
-  
-}
+
 #tf-home .overlay{
   top: 0;
     left: 0;
@@ -204,19 +193,31 @@ Home Style
 	//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
 	//height: 100%;
 //	background-attachment: fixed;
-  
-  
-  
-  
+
 }
+
 #tf-home p.lead{
 	color: #e3e3e3;
 }
-
+// relative container to abolutely position intro and mouse elements
 .content{
 	position: relative;
-	padding: 13% 0 0;
+	height: 100% !important;
 }
+
+.intro-absolute{
+  position: absolute !important;
+	bottom: 85px;
+	width: 100% !important;
+  
+}
+
+.mouse-absolute{
+    position: absolute;
+    bottom: 22px;
+    width: 100% !important;
+}
+
 
 .color{
 	color: #fcac45;
@@ -364,10 +365,10 @@ h1.cd-headline.clip.is-full-width {
 
 video#bgvid {
   		position: absolute;
+      top: 0;
       right: 0;
-      bottom: 0;
-      top:0;
-      right:0;
+      bottom:0;
+      left:0;
       width: 100%;
       height: 100%;
       background-size: 100% 100%;
@@ -377,7 +378,14 @@ video#bgvid {
   		background-size: contain;
    		object-fit: cover; /*cover video background */
    		z-index:3;
+        
+  @media screen and (min-width: 1400px) { 
+     height: 96%;
 }
+  
+  
+}
+
 #tf-home .overlay{
 position: absolute;
 		z-index: 4;
