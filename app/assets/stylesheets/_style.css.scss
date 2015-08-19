@@ -859,8 +859,10 @@ nav#footer {
     }
 
       & p{
+        font-family: $primary-font;
+        font-size: 1.4em;
         font-size: 12px;
-      margin-top: 10px;
+        margin-top: 10px;
       }
   
       & i.fa{
