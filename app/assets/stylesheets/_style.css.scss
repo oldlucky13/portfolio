@@ -487,12 +487,19 @@ Demo Section
 
 
 div[data-menuanchor="thirdPage"]{
-  background: url(80selectric_dark_mini.jpg);
+  
+  background: -webkit-linear-gradient(90deg, #C04848 10%, #480048 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #C04848 10%, #480048 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #C04848 10%, #480048 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #C04848 10%, #480048 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #C04848 10%, #480048 90%); /* W3C */
+        
+/*   background: url(80selectric_dark_mini.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
-	color: #ffffff;
+	background-repeat: no-repeat; 
+	color: #ffffff;  */
 }
 
 div[data-menuanchor="thirdPage"] .section-headline {
@@ -587,6 +594,13 @@ Contact Section
 =======================*/
 div[data-menuanchor="fourthPage"]{
   
+    background: url(80selectric_dark_mini.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #ffffff;
+  
 /*   background: url() repeat 0 0 ;
 	background-size: cover;
 	background-position: center;
@@ -601,11 +615,11 @@ div[data-menuanchor="fourthPage"]{
     from { background-position: 0 0; }
     to { background-position: -1400px 0; }
  */
-  background: -webkit-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* IE10 */
-  background:      -o-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* Opera 11.10+ */
-  background:         linear-gradient(0deg, #360033 10%, #0b8793 90%); /* W3C */
+ // background: -webkit-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* Chrome 10+, Saf5.1+ */
+ // background:    -moz-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* FF3.6+ */
+//  background:     -ms-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* IE10 */
+//  background:      -o-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* Opera 11.10+ */
+//  background:         linear-gradient(0deg, #360033 10%, #0b8793 90%); /* W3C */
              
 }
 .contact-text{
@@ -766,8 +780,8 @@ input.btn.btn-default{
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
      &:hover, &:active{
-        background: none repeat scroll 0 0 rgb(255, 255, 255);
-        color: rgb(14, 131, 205);
+        background: none repeat scroll 0 0 $input-green;
+        color: white;
         border-radius: 0;
        
      }        
@@ -895,8 +909,8 @@ nav#footer {
       color: #8c8c8c;
       transition: all 0.5s;
             &:hover{
-          background: #FCAC45;
-          border-color: #FCAC45;
+          background: #c02026;
+          border-color: white;
           color: #ffffff;
         }
 
