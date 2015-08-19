@@ -18,6 +18,7 @@ $(document).ready(function(){
   /* ==============================================
   	Contact Form AJAX 
   	=============================================== */
+  
    $('#contact_form').validate({ // initialize the plugin
         rules: {
             "contact[name]": {
@@ -35,16 +36,21 @@ $(document).ready(function(){
            "contact[email]": { placement: 'bottom' }
         },
      submitHandler: function(form){
+
             $.ajax({
             url: form.action,
             type: form.method,
             data: $(form).serialize(),
             success : function(){
-               $('#contact_form').closest('.row').prepend('<div style="display:block;clear:both; " class="alert alert-success">Message sent, thanks!</div>');
-               //clear fields
+              //clear fields
                $('input[type="text"],input[type="email"],textarea').val('');
+              //success field
+               $('#contact_form').closest('.row').prepend('<div style="display:block;clear:both; " class="alert alert-success">Message sent, thanks!</div>');
+               
                //fadeout success msg
                $('.alert-success').delay(5000).fadeOut(400);
+               
+              
             } //success
     
         }); //ajax

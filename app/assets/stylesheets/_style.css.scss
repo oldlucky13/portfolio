@@ -488,18 +488,12 @@ Demo Section
 
 div[data-menuanchor="thirdPage"]{
   
-  background: -webkit-linear-gradient(90deg, #C04848 10%, #480048 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #C04848 10%, #480048 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #C04848 10%, #480048 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #C04848 10%, #480048 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #C04848 10%, #480048 90%); /* W3C */
-        
-/*   background: url(80selectric_dark_mini.jpg);
+  background: url(bkgrd/bkgrd-electric_mini.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat; 
-	color: #ffffff;  */
+	color: #ffffff;  
 }
 
 div[data-menuanchor="thirdPage"] .section-headline {
@@ -594,12 +588,12 @@ Contact Section
 =======================*/
 div[data-menuanchor="fourthPage"]{
   
-    background: url(80selectric_dark_mini.jpg);
+  background: url(bkgrd/bkgrd-dots_mini.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: center bottom;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	color: #ffffff;
+	color: black;
   
 /*   background: url() repeat 0 0 ;
 	background-size: cover;
@@ -644,7 +638,7 @@ div[data-menuanchor="fourthPage"]{
 
 #tf-contact{
 	padding: 50px 0;
-  margin-top: -50px;
+  margin-top: -130px;
   
         & .tooltip-inner {
           font-family: $primary-font-stack;
