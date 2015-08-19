@@ -42,23 +42,25 @@ $(document).ready(function(){
             type: form.method,
             data: $(form).serialize(),
             success : function(){
+              // disable the button
+              $('input[type="submit"]').prop("disabled", true);
+              // do not return false since this stops the event propagation
               //clear fields
                $('input[type="text"],input[type="email"],textarea').val('');
               //success field
-               $('#contact_form').closest('.row').prepend('<div style="display:block;clear:both; " class="alert alert-success">Message sent, thanks!</div>');
-               
-               //fadeout success msg
-               $('.alert-success').delay(5000).fadeOut(400);
-               
+               $('#contact_form').closest('.row').prepend('<div style="display:block;clear:both; " class="col-md-8 col-md-offset-2 alert alert-success">Message sent, thanks!</div>');
               
+               //fadeout success msg
+               $('.alert-success').delay(4500).fadeOut(400);
+               
+               $('input[type="submit"]').prop("disabled", false);
             } //success
-    
+   
         }); //ajax
         
         } // contact form submit
      
     }); //validate plugin initialize
-  
 //   $(function(){
 //     $("#contact_form").submit(function(){
 //         var dataSet = $(this).serialize();

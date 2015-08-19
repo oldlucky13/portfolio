@@ -593,42 +593,19 @@ div[data-menuanchor="fourthPage"]{
 	background-position: center bottom;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	color: black;
-  
-/*   background: url() repeat 0 0 ;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	//background-repeat: no-repeat;
-	color: #ffffff;
-  -webkit-animation: slide 40s linear infinite;
- 
+	color: black;           
 }
 
- @-webkit-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -1400px 0; }
- */
- // background: -webkit-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* Chrome 10+, Saf5.1+ */
- // background:    -moz-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* FF3.6+ */
-//  background:     -ms-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* IE10 */
-//  background:      -o-linear-gradient(0deg, #360033 10%, #0b8793 90%); /* Opera 11.10+ */
-//  background:         linear-gradient(0deg, #360033 10%, #0b8793 90%); /* W3C */
-             
-}
+
 .contact-text{
   font-size: 1.4em;
 	margin: 12px 0 0;
 	line-height: 1.618em;
 	font-family: $primary-font-stack;
   padding-bottom: 20px;
-  color:white;
-  
+  color:white;  
 }
 	
-
-
-
 .form-inline .form-control {
     display: inline-block;
     width: 100% !important;
@@ -740,6 +717,11 @@ label[id$="-error"] {
 	position: relative;
 }
 
+.alert-success {
+    font-family: $primary-font;
+    font-size: 1.4em;
+}
+
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .cbp-mc-form:before, 
 .cbp-mc-form:after { 
@@ -808,18 +790,6 @@ input.btn.btn-default{
 .cbp-mc-form textarea {
 	min-height: 100px;
 }
-
-/* .cbp-mc-form input:focus,
-.cbp-mc-form textarea:focus,
-.cbp-mc-form label:active + input,
-.cbp-mc-form label:active + textarea {
-	outline: none;
-	border: 2px solid #2ecc71;
-} */
-
-/* .cbp-mc-form select:focus {
-	outline: none;
-} */
 
 .form-control::-webkit-input-placeholder { /* WebKit browsers */
     color: $input-green !important;

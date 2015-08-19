@@ -12,7 +12,7 @@
             <%= f.text_area :message, class: 'form-control', :placeholder => "Message" %>
         </div> <!--form group 3-->
         <div class="form-group form-inline col-sm-12">
-            <%= f.submit 'Submit', class: 'btn btn-default' %>
+            <%= f.submit 'Submit', class: 'btn btn-default', :data => {:disable_with => "Saving..."} %>
         </div>
       <% end %>
     
