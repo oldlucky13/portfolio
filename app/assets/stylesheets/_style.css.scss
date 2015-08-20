@@ -485,7 +485,16 @@ div[data-menuanchor="thirdPage"]{
 }
 
 div[data-menuanchor="thirdPage"] .section-headline {
-    margin: 32px 0px 0 0;
+    margin: 42px 0px 0 0;
+}
+.demo-text{
+  font-size: 1.4em;
+	margin: 0;
+	line-height: 1.618em;
+	font-family: $primary-font-stack;
+  font-style: italic;
+  padding-bottom: 10px;
+  color:white; 
 }
 
 .section-title.center{
@@ -513,6 +522,30 @@ div[data-menuanchor="thirdPage"] .section-headline {
 	position: relative;
 	left: 17%;
 }
+
+
+/*Slides*/
+
+.slide-image{
+  box-shadow: 4px 4px 13px black;
+  
+  
+  
+}
+
+.project-title{
+    font-family: $primary-font-stack;
+    font-weight: 600;
+}
+
+.project-text{
+    line-height: 1.75em;
+    font-size: 1.3em;
+}
+  
+
+
+
 
 
 /*Arrows*/
