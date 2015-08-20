@@ -529,8 +529,10 @@ div[data-menuanchor="thirdPage"] .section-headline {
 .slide-image{
   box-shadow: 4px 4px 13px black;
   
-  
-  
+      @media screen and (max-width: 991px){
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 
 .project-title{
@@ -559,25 +561,73 @@ div[data-menuanchor="thirdPage"] .section-headline {
     height: 0;
     border-style: solid;
     margin-top: -38px;
-}
-.fp-controlArrow.fp-prev {
-    width:100%;
+  
+          &.fp-prev {
     left: 50px;
     border: none;
     width: 50px;
     height: 101px;
     background: url('arrowThin.svg') no-repeat;
     cursor: pointer;
+            
+              @media screen and (max-width: 1265px) { 
+                left: 40px;
+                width: 30px;
+            }
+            
+              @media screen and (min-width: 680px) and (max-width: 713px)  { 
+                top: 44%;
+            }
+            
+              @media screen and (min-width: 493px) and (max-width: 680px)  { 
+                top: 39%;
+            }
+            
+              @media screen and (max-width: 492px) { 
+                left: 27px;
+                width: 30px;
+                top: 38%;
+            }
+            
+           
+          
+                
       
-}
-.fp-controlArrow.fp-next {
+  }// fp-prev
+  
+        &.fp-next {
     right: 50px;
     border: none;
     width: 50px;
     height: 101px;
     background: url('arrowThin-right.svg') no-repeat;
     cursor: pointer;
+          
+           @media screen and (max-width: 1265px) { 
+              right: 40px;
+              width: 30px;
+            }
+          
+          @media screen and (min-width: 680px) and (max-width: 713px)  { 
+                top: 44%;
+            }
+          
+          
+           @media screen and (min-width: 493px) and (max-width: 680px)  { 
+                top: 39%;
+            }
+          
+           @media screen and (max-width: 492px) { 
+                right: 27px;
+                width: 30px;
+                top: 38%;
+            }         
+          
+  }// fp-next
+  
+  
 }
+
 
 
 /*=====================
