@@ -15,6 +15,18 @@ $(document).ready(function(){
   
   $('.toolListIcon').tooltip();
   
+    /* ==============================================
+  	Magnific Popup initialize
+  	=============================================== */ 
+  $('a').magnificPopup({
+		type: 'image',
+  
+    image: {
+			verticalFit: true
+		}
+  
+	});
+  
   /* ==============================================
   	Contact Form AJAX 
   	=============================================== */
