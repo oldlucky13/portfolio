@@ -111,6 +111,10 @@ $button-width: 35px;
     visibility: visible;
     height: 100%;
     z-index: 98;
+     @media screen and (min-width:767px){
+    display:none;
+    
+  }
     
     li {
       animation: fadeInRight .5s ease forwards;
@@ -154,12 +158,13 @@ $button-width: 35px;
       opacity: 0;
       
       a {
-            display: block;
+        display: block;
         position: relative;
         color: $color-link;
         text-decoration: none;
         overflow: hidden;
         text-transform: uppercase;
+        font-weight: 300;
         
         &:hover:after,
          &:focus:after,

@@ -28,13 +28,20 @@ $(document).ready(function(){
 	});
   
    /* ==============================================
-  	Mobile overlay
+  	Mobile Overlay
   	=============================================== */ 
   
   $('#toggle').click(function() {
    $(this).toggleClass('active');
    $('#mm-overlay').toggleClass('open');
   });
+  
+  $('.overlay-menu li a.page-scroll').click(function() {
+   $('#toggle').toggleClass('active');
+   $('#mm-overlay').toggleClass('open');
+  });
+  
+  
   
   /* ==============================================
   	Contact Form AJAX 
@@ -118,7 +125,8 @@ $(document).ready(function(){
          fixedElements:'#tf-menu',
          responsiveWidth: 480,
          slidesNavigation: true,
-         scrollOverflow: false,   
+         scrollOverflow: false,  
+        // normalScrollElements: '.mm-overlay.open',
         // scrollOverflow: true,
          //sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
          afterRender: function(){
@@ -358,14 +366,16 @@ $(document).ready(function(){
 		$newWord.removeClass('is-hidden').addClass('is-visible');
 	}
   
-      
+    
+
+  
+  
+  
       
 }); //end document.ready
     
-  
 
-
-
+ 
 function main() {
 
 (function () {
