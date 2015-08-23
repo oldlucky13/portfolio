@@ -3,15 +3,13 @@
     <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!--<a class="navbar-brand" href="index.html">Trent G<span>.</span></a>-->
-        </div>
+       
+                   <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
+       
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -20,9 +18,8 @@
             <li data-menuanchor="secondPage"><a href="#secondPage"  class="page-scroll">About</a></li>
             <li data-menuanchor="thirdPage"><a href="#thirdPage"  class="page-scroll">Demo</a></li>
             <li data-menuanchor="fourthPage"><a href="#fourthPage"  class="page-scroll">Contact</a></li>
-<!--             <li data-menuanchor="fifthPage"><a href="#fifthPage"  class="page-scroll">Clients</a></li>
-            <li data-menuanchor="sixthPage"><a href="#sixthPage"   class="page-scroll">Portfolio</a></li>
-            <li data-menuanchor="lastPage"><a href="#lastPage"  class="page-scroll">Contact</a></li> -->
+         <!--      <li data-menuanchor="sixthPage"><a href="#sixthPage"   class="page-scroll">Portfolio</a></li>
+            <li data-menuanchor="lastPage"><a href="#lastPage"  class="page-scroll">Contact</a></li>-->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -38,6 +35,19 @@
     <li><a href="#sixthPage"  data-menuanchor="sixthPage" class=""><span></span></a></li>
     <li><a href="#lastPage"  data-menuanchor="lastPage" class=""><span></span></a></li> -->
 	</ul>
+</div>
+
+
+
+<div class="mm-overlay" id="mm-overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li data-menuanchor="firstPage"><a href="#firstPage" class="page-scroll">Home</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage"  class="page-scroll">About</a></li>
+      <li data-menuanchor="thirdPage"><a href="#thirdPage"  class="page-scroll">Demo</a></li>
+      <li data-menuanchor="fourthPage"><a href="#fourthPage"  class="page-scroll">Contact</a></li>
+    </ul>
+  </nav>
 </div>
 
     <!-- Home Page
@@ -172,8 +182,8 @@
      <div class="slide"><!--slide -->
        <div class="container">
          <div class="row">
-           <div class="col-md-7 ">
-             <%= link_to image_tag("sliders/slider_LLO.jpg", :alt => "", :class => "img-responsive slide-image" ), image_path("sliders/slider_LLO.jpg", :class => "image-pop" ) %> 
+           <div class="col-md-7 slide-image ">
+             <%= link_to image_tag("sliders/slider_LLO.jpg", :alt => "", :class => "img-responsive " ), image_path("sliders/slider_LLO.jpg", :class => "image-pop" ) %> 
            </div><!--col-md-7 slide 1-->
            <div class="col-md-5">
              <h2 class="project-title">Project Title</h2>
@@ -185,8 +195,8 @@
      <div class="slide">
        <div class="container">
          <div class="row">
-           <div class="col-md-7 ">
-             <%= link_to image_tag("sliders/slider_LLO.jpg", :alt => "", :class => "img-responsive slide-image" ), image_path("sliders/slider_LLO.jpg", :class => "image-pop" ) %> 
+           <div class="col-md-7 slide-image">
+             <%= link_to image_tag("sliders/slider_LLO.jpg", :alt => "", :class => "img-responsive " ), image_path("sliders/slider_LLO.jpg", :class => "image-pop" ) %> 
            </div><!--col-md-7 slide 2-->
            <div class="col-md-5">
              <h2 class="project-title">Project Title</h2>
@@ -198,8 +208,8 @@
      <div class="slide">
       <div class="container">
          <div class="row">
-          <div class="col-md-7 ">
-             <%= link_to image_tag("sliders/slider_LLO.jpg", :alt => "", :class => "img-responsive slide-image" ), image_path("sliders/slider_LLO.jpg", :class => "image-pop" ) %>  
+          <div class="col-md-7 slide-image">
+             <%= link_to image_tag("sliders/slider_LLO.jpg", :alt => "", :class => "img-responsive " ), image_path("sliders/slider_LLO.jpg", :class => "image-pop" ) %>  
            </div><!--col-md-7 slide 3-->
            <div class="col-md-5">
              <h2 class="project-title">Project Title</h2>
@@ -211,8 +221,8 @@
      <div class="slide">
        <div class="container">
          <div class="row">
-          <div class="col-md-7 ">
-             <%= link_to image_tag("sliders/slider_LLO.jpg", :alt => "", :class => "img-responsive slide-image" ), image_path("sliders/slider_LLO.jpg", :class => "image-pop" ) %>  
+          <div class="col-md-7 slide-image">
+             <%= link_to image_tag("sliders/slider_LLO.jpg", :alt => "", :class => "img-responsive" ), image_path("sliders/slider_LLO.jpg", :class => "image-pop" ) %>  
            </div><!--col-md-7 slide 4-->
            <div class="col-md-5">
              <h2 class="project-title">Project Title</h2>

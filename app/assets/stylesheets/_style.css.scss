@@ -1,6 +1,7 @@
 @import 'partials/variables'; // colors, fonts etc...
 @import 'partials/ionicons-font';
 @import 'partials/buttons/buttons';
+@import 'partials/mobileOverlay/mobileOverlay';
 @import 'animate';
 
 
@@ -83,6 +84,7 @@ Navigation
 #tf-menu {
 	padding: 20px;
 	transition: all 0.8s;
+  z-index: 98;
 }
 #tf-menu.navbar-default {
 	background-color: rgba(248, 248, 248, 0);
@@ -99,6 +101,7 @@ ul.nav.navbar-nav {
     width: 100%;
 }
 
+
 #tf-menu.navbar-default .navbar-nav > li > a {
   font-family: $primary-font-stack;
   font-weight: 300;
@@ -109,9 +112,15 @@ ul.nav.navbar-nav {
 	letter-spacing: 3px;
   opacity: .8;
 }
+
 .on {
 	background-color: $secondary-color !important;
 	padding: 0 !important;
+  @media screen and (max-width:767px){
+    background-color: transparent !important;
+   
+  }
+
 }
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
@@ -151,6 +160,13 @@ ul.nav.navbar-nav {
 
 .navbar-collapse {
   text-align:center;
+}
+
+@media (max-width: 767px) {
+  /* line 8, /home/nitrous/code/portfolio/app/assets/stylesheets/_responsive.css.scss */
+  #tf-menu.navbar-default {
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
 }
 
 /* Dot navigation */
@@ -526,7 +542,7 @@ div[data-menuanchor="thirdPage"] .section-headline {
 
 /*Slides*/
 
-.slide-image{
+.slide-image a{
   box-shadow: 4px 4px 13px black;
   
       @media screen and (max-width: 991px){

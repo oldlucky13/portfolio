@@ -18,7 +18,7 @@ $(document).ready(function(){
     /* ==============================================
   	Magnific Popup initialize
   	=============================================== */ 
-  $('a').magnificPopup({
+  $('.slide-image a').magnificPopup({
 		type: 'image',
   
     image: {
@@ -26,6 +26,15 @@ $(document).ready(function(){
 		}
   
 	});
+  
+   /* ==============================================
+  	Mobile overlay
+  	=============================================== */ 
+  
+  $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#mm-overlay').toggleClass('open');
+  });
   
   /* ==============================================
   	Contact Form AJAX 
