@@ -1,4 +1,19 @@
 $(document).ready(function(){  
+
+  
+    
+  /* ==============================================
+  	Prevents removal of class 'active' (removing close btn) from toggle when scrolling
+  	=============================================== */ 
+  $(window).scroll(function() {    
+
+    var scroll = $(window).scrollTop();
+    // add the 'active' class to the correct li based on the scroll amount
+    if (scroll <= 6000 && $("#mm-overlay").is(".open")) {
+      $("#toggle").addClass("active");
+    }
+  });
+  
   
   /* ==============================================
   	Change default message for validator
