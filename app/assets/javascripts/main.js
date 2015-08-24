@@ -144,12 +144,15 @@ $(document).ready(function(){
         // scrollOverflow: true,
          //sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
          afterRender: function(){
-         //  $('.fp-slide.fp-table').css('display','flex');
+           $('.fp-slide.fp-table').css({ 'display': '-webkit-box',      
+  'display': '-moz-box',        
+  'display': '-ms-flexbox',      
+  'display': '-webkit-flex',     
+  'display': 'flex'            });
          
   
   
         }
-         
          
        });
 
