@@ -441,6 +441,13 @@ p.intro:first-child:first-letter {
 
 #tf-about{
 	padding: 80px 0;
+  
+      @media screen and (max-width:768px){
+        padding: 0;
+
+      }
+  
+  
 }
 
 .toolListIcon {
@@ -502,6 +509,15 @@ p.intro:first-child:first-letter {
   
       }
 
+.btn-margin{
+    margin-top: 30px;
+       @media screen and (max-width:768px){
+            margin-top:30px;
+            margin-bottom:30px;
+          }
+  
+}
+
 /*=====================
 Demo Section 
 =======================*/
@@ -515,10 +531,21 @@ div[data-menuanchor="thirdPage"]{
 	background-attachment: fixed;
 	background-repeat: no-repeat; 
 	color: #ffffff;  
+   
+  @media screen and (max-width:768px){
+            height:700px !important;
+          }
+  
+  
 }
 
 div[data-menuanchor="thirdPage"] .section-headline {
     margin: 42px 0px 0 0;
+  
+      @media screen and (max-width:768px){
+            margin:0;
+          }
+    
 }
 .demo-text{
   font-size: 1.4em;
@@ -696,6 +723,10 @@ div[data-menuanchor="fourthPage"]{
 #tf-contact{
 	padding: 50px 0;
   margin-top: -130px;
+  
+   @media screen and (max-width:768px){
+            margin-top:-73px;
+          }
   
         & .tooltip-inner {
           font-family: $primary-font-stack;

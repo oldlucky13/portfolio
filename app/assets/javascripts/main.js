@@ -41,8 +41,7 @@ $(document).ready(function(){
    $('#mm-overlay').toggleClass('open');
   });
   
-  
-  
+ 
   /* ==============================================
   	Contact Form AJAX 
   	=============================================== */
@@ -123,15 +122,16 @@ $(document).ready(function(){
          menu: '#fp-nav, #tf-menu',
          verticalCentered: true,
          fixedElements:'#tf-menu',
-         responsiveWidth: 480,
+         responsiveWidth: 768,
          slidesNavigation: true,
-         scrollOverflow: false,  
+        // scrollOverflow: false,  
         // normalScrollElements: '.mm-overlay.open',
         // scrollOverflow: true,
          //sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
          afterRender: function(){
            $('.fp-slide.fp-table').css('display','flex');
          
+  
   
         }
          

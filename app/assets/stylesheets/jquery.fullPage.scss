@@ -104,6 +104,13 @@ html.fp-enabled,
 
     &.bottom {
         bottom: 17px;
+      
+      @media screen and (max-width:768px){
+               bottom: 2px;
+          }
+      
+       
+      
     }
 
     &.top {
