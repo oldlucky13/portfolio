@@ -198,7 +198,17 @@ Home Style
     position: absolute;
     background: url("TGIIoverlay2.svg") center center no-repeat;
     background-size: cover;
+  
+       @media screen and (max-width:767px){
+        background:none;
+
+      }
 }
+
+
+
+
+
 
 #tf-home p.lead{
 	color: #e3e3e3;
@@ -233,6 +243,13 @@ img.logo.center-block.img-responsive {
 // Hi, My name is Trent
 .hello{
   font: 1.3em/100% $headline-font-stack;
+}
+
+@media screen and (max-width:480px){
+       span.cd-words-wrapper {
+          font-size: .8em;
+          max-width: 281px !important;
+      }
 }
 
 h1.cd-headline.clip.is-full-width {
