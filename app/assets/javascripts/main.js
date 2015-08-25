@@ -139,21 +139,9 @@ $(document).ready(function(){
          fixedElements:'#tf-menu',
          responsiveWidth: 768,
          slidesNavigation: true,
-        // scrollOverflow: false,  
-        // normalScrollElements: '.mm-overlay.open',
-        // scrollOverflow: true,
-         //sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
          afterRender: function(){
-           $('.fp-slide.fp-table').css({ 'display': '-webkit-box',      
-  'display': '-moz-box',        
-  'display': '-ms-flexbox',      
-  'display': '-webkit-flex',     
-  'display': 'flex'            });
-         
-  
-  
-        }
-         
+           $('.fp-slidesContainer .fp-tableCell').addClass('flex');
+         } 
        });
 
  
