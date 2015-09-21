@@ -84,18 +84,27 @@ $(document).ready(function(){
             type: form.method,
             data: $(form).serialize(),
             success : function(){
+               // disable the button and change button state message
+              $('input[type="submit"]').prop("disabled", true).val('Sending...');  
+                //clear fields    
+              $('input[type="text"],input[type="email"],textarea').val('');
+            
+            setTimeout(function () {
+               // enable the button and revert to send message
+                $('input[type="submit"]').prop("disabled", false).val("Send Message");
+            }, 3000);       
               // disable the button
-              $('input[type="submit"]').prop("disabled", true);
+            //  $('input[type="submit"]').prop("disabled", true);
               // do not return false since this stops the event propagation
               //clear fields
-               $('input[type="text"],input[type="email"],textarea').val('');
+            //   $('input[type="text"],input[type="email"],textarea').val('');
               //success field
                $('#contact_form').closest('.row').prepend('<div style="display:block;clear:both; " class="col-md-8 col-md-offset-2 alert alert-success">Message sent, thanks!</div>');
               
                //fadeout success msg
-               $('.alert-success').delay(4500).fadeOut(400);
+               $('.alert-success').delay(3000).fadeOut(400);
                
-               $('input[type="submit"]').prop("disabled", false);
+             //  $('input[type="submit"]').prop("disabled", false);
             } //success
    
         }); //ajax
